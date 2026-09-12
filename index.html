@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyad Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="riyadhome_logo.jpg.png">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Riyad.</a>
+        
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#" id="aboutBtn">About Me</a>
+            <a href="#" id="servicesBtn">Services</a>
+            <a href="#" id="shopBtn">Shop</a>
+            <a href="#" id="signupBtn">Signup</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Riyad</h1>
+            <h3>Frontend Developer</h3>
+            <p>This is an experimental design; further details will follow. </p>
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#" id="letsTalkBtn">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <!-- Social Links -->
+            <a href="https://www.facebook.com/hazrataliriyadd" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.twitter.com/hazrataliriyad" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/hazrataliriyad" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.youtube.com/@hazrataliriyad" target="_blank"><i class='bx bxl-youtube'></i></a>
+        </div>
+
+        <!-- ================= Floating Alpha AI Widget (Bottom Right) ================= -->
+        <div class="floating-ai-container" id="floatingAiBtn">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="ai-main-btn">
+                <i class='bx bx-bot'></i>
+            </div>
+            <span class="ai-badge">Ask Alpha AI</span>
+        </div>
+
+        <!-- ================= Alpha AI Modal ================= -->
+        <div class="modal-overlay" id="aiModal">
+            <div class="glass-modal ai-modal">
+                <span class="close-btn" id="closeAiModal">&times;</span>
+                
+                <!-- AI Header -->
+                <div class="ai-header">
+                    <div class="ai-avatar">
+                        <i class='bx bx-bot'></i>
+                    </div>
+                    <div class="ai-title">
+                        <h2>Alpha AI <span>v1.0</span></h2>
+                        <p><span class="status-dot"></span> Online & Ready</p>
+                    </div>
+                </div>
+
+                <!-- Chat Box Area -->
+                <div class="chat-container" id="chatContainer">
+                    <div class="message ai-message">
+                        Hello! I am <strong>Alpha</strong>, Riyad's personal AI assistant. How can I assist you today?
+                    </div>
+                </div>
+
+                <!-- Chat Input Area -->
+                <form class="chat-input-area" id="chatForm">
+                    <input type="text" id="userInput" placeholder="Ask Alpha anything..." autocomplete="off" required>
+                    <button type="submit" id="sendBtn"><i class='bx bxs-paper-plane'></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ================= Services Modal ================= -->
+        <div class="modal-overlay" id="servicesModal">
+            <div class="glass-modal services-modal">
+                <span class="close-btn" id="closeServicesModal">&times;</span>
+                <h2>My Services</h2>
+                <p>What I offer (with a touch of fun!)</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class='bx bx-code-alt service-icon'></i>
+                        <h3>Web Design</h3>
+                        <p>চোখ ধাঁধানো ডিজাইন আর সুপার ফাস্ট স্পিড! ক্লিক করার আগেই পেজ লোড হওয়ার গ্যারান্টি।</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class='bx bx-coffee service-icon'></i>
+                        <h3>Coffee to Code</h3>
+                        <p>আমাকে শুধু এক কাপ গরম কফি দাও, আর আমি সেটাকে জাদুকরী কোডে রূপান্তর করে দেব!</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class='bx bx-bug service-icon'></i>
+                        <h3>Bug Exterminator</h3>
+                        <p>কোডের ভেতর লুকিয়ে থাকা সব বিরক্তিকর 'পোকা' (Bugs) স্থায়ীভাবে গায়েব করে দেওয়া।</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class='bx bx-magic-wand service-icon'></i>
+                        <h3>UI/UX Magic</h3>
+                        <p>পিক্সেল পারফেক্ট ডিজাইন আর স্ক্রল করলেই জাদুর মতো নান্দনিক সব অ্যানিমেশন!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= Shop Modal ================= -->
+        <div class="modal-overlay" id="shopModal">
+            <div class="glass-modal shop-modal">
+                <span class="close-btn" id="closeShopModal">&times;</span>
+                <h2>Our Shop Collection</h2>
+                <p>Explore our exclusive products</p>
+                
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="image1.jpeg" alt="book" class="product-img">
+                        <h3>Udvash physics</h3>
+                        <p class="product-desc">Buy my ssc book.</p>
+                        <p class="product-price">$19.00</p>
+                        <div class="stars">★★★★☆</div>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="image2.jpeg" alt="Earphone" class="product-img">
+                        <h3>Chemistry</h3>
+                        <p class="product-desc">Buy my ssc book.</p>
+                        <p class="product-price">$12.00</p>
+                        <div class="stars">★★★★★</div>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="image3.jpeg" alt="Book" class="product-img">
+                        <h3>Bangla 1st</h3>
+                        <p class="product-desc">Buy my ssc book.</p>
+                        <p class="product-price">$7.84</p>
+                        <div class="stars">★★★★☆</div>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="image4.jpeg" alt="Book" class="product-img">
+                        <h3>English</h3>
+                        <p class="product-desc">Buy my ssc book.</p>
+                        <p class="product-price">$10.84</p>
+                        <div class="stars">★★★★★</div>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="image5.jpeg" alt="Book" class="product-img">
+                        <h3>Religion</h3>
+                        <p class="product-desc">Buy my ssc book.</p>
+                        <p class="product-price">$15.00</p>
+                        <div class="stars">★★★★☆</div>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="image6.jpeg" alt="Book" class="product-img">
+                        <h3>Biology</h3>
+                        <p class="product-desc">Buy my ssc book.</p>
+                        <p class="product-price">$8.09</p>
+                        <div class="stars">★★★★★</div>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= Signup Modal ================= -->
+        <div class="modal-overlay" id="signupModal">
+            <div class="glass-modal">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Create Account</h2>
+                <p>Join with us to explore more!</p>
+                
+                <form>
+                    <div class="input-box">
+                        <input type="text" required placeholder="Full Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" required placeholder="Email Address">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required placeholder="Password">
+                    </div>
+                    <button type="submit" class="signup-submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ================= About Me Modal ================= -->
+        <div class="modal-overlay" id="aboutModal">
+            <div class="glass-modal about-modal">
+                <span class="close-btn" id="closeAboutModal">&times;</span>
+                <h2>About Me</h2>
+                
+                <div class="about-content">
+                    <p>Hello! I'm <strong>Riyad</strong>, a 17-year-old passionate Frontend Developer based in beautiful Bangladesh.</p>
+                    <p>Dedication and discipline are at the core of who I am. I successfully memorized the Holy Quran (Hifz) in just 1.5 years, a spiritual journey that profoundly shaped my focus, patience, and mindset.</p>
+                    <p>Academically driven, I recently passed my SSC examinations in 2026, proudly achieving a perfect <strong>GPA 5.00</strong> with an <strong>A+ in all subjects</strong>.</p>
+                    <p>Beyond coding and studying, I am a dedicated content creator. I run a thriving YouTube channel where I have built an amazing community of nearly <strong>100,000 subscribers</strong>. I love blending creativity with technology to build modern, interactive, and engaging digital experiences!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= JavaScript ================= -->
+    <script>
+        // Elements
+        const aboutBtn = document.getElementById('aboutBtn');
+        const aboutModal = document.getElementById('aboutModal');
+        const closeAboutModal = document.getElementById('closeAboutModal');
+
+        const signupBtn = document.getElementById('signupBtn');
+        const signupModal = document.getElementById('signupModal');
+        const closeModal = document.getElementById('closeModal');
+
+        const shopBtn = document.getElementById('shopBtn');
+        const shopModal = document.getElementById('shopModal');
+        const closeShopModal = document.getElementById('closeShopModal');
+
+        const servicesBtn = document.getElementById('servicesBtn');
+        const servicesModal = document.getElementById('servicesModal');
+        const closeServicesModal = document.getElementById('closeServicesModal');
+
+        const floatingAiBtn = document.getElementById('floatingAiBtn');
+        const aiModal = document.getElementById('aiModal');
+        const closeAiModal = document.getElementById('closeAiModal');
+
+        // About Events
+        aboutBtn.addEventListener('click', (e) => { e.preventDefault(); aboutModal.classList.add('active'); });
+        closeAboutModal.addEventListener('click', () => aboutModal.classList.remove('active'));
+
+        // Signup Events
+        signupBtn.addEventListener('click', (e) => { e.preventDefault(); signupModal.classList.add('active'); });
+        closeModal.addEventListener('click', () => signupModal.classList.remove('active'));
+
+        // Shop Events
+        shopBtn.addEventListener('click', (e) => { e.preventDefault(); shopModal.classList.add('active'); });
+        closeShopModal.addEventListener('click', () => shopModal.classList.remove('active'));
+
+        // Services Events
+        servicesBtn.addEventListener('click', (e) => { e.preventDefault(); servicesModal.classList.add('active'); });
+        closeServicesModal.addEventListener('click', () => servicesModal.classList.remove('active'));
+
+        // Alpha AI Floating Widget Events
+        floatingAiBtn.addEventListener('click', () => aiModal.classList.add('active'));
+        closeAiModal.addEventListener('click', () => aiModal.classList.remove('active'));
+
+        // Combined Outside Click Event
+        window.addEventListener('click', (e) => {
+            if (e.target === signupModal) signupModal.classList.remove('active');
+            if (e.target === aboutModal) aboutModal.classList.remove('active');
+            if (e.target === shopModal) shopModal.classList.remove('active');
+            if (e.target === servicesModal) servicesModal.classList.remove('active');
+            if (e.target === aiModal) aiModal.classList.remove('active');
+        });
+
+        // Alpha AI Chat Logic & Infinite Pulse Effect
+        const chatForm = document.getElementById('chatForm');
+        const userInput = document.getElementById('userInput');
+        const chatContainer = document.getElementById('chatContainer');
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            // Add User Message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user-message';
+            userMsg.textContent = text;
+            chatContainer.appendChild(userMsg);
+
+            userInput.value = '';
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Add Alpha Clean Loading Animation
+            const loadingMsg = document.createElement('div');
+            loadingMsg.className = 'message ai-message loading-msg';
+            loadingMsg.innerHTML = `
+                <div class="clean-loader">
+                    <span>Alpha is thinking</span>
+                    <div class="pulse-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            `;
+            chatContainer.appendChild(loadingMsg);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
+    </script>
+
+</body>
+</html>
