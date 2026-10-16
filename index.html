@@ -311,5 +311,27 @@
         });
     </script>
 
+<script>
+  // Block right-click everywhere
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // Block common inspect/view-source shortcuts
+  document.addEventListener('keydown', function (e) {
+    const key = e.key.toLowerCase();
+
+    if (
+      e.key === 'F12' ||                                        // F12
+      (e.ctrlKey && e.shiftKey && ['i', 'j', 'c'].includes(key)) || // Ctrl+Shift+I/J/C
+      (e.metaKey && e.altKey && ['i', 'j', 'c'].includes(key)) ||   // Cmd+Option+I/J/C (Mac)
+      (e.ctrlKey && key === 'u') ||                             // Ctrl+U (view source)
+      (e.metaKey && e.altKey && key === 'u')                    // Cmd+Option+U (Mac)
+    ) {
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 </body>
 </html>
